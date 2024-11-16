@@ -2,7 +2,6 @@ plugins {
     id("java")
 }
 
-
 dependencies {
     implementation("dev.httpmarco:osgan-netty:1.1.0-SNAPSHOT")
 

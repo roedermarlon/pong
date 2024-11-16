@@ -15,6 +15,9 @@ include(
     "all"
 )
 
-include("server")
-include("client")
-include("all")
+include(
+    ":api",
+    ":api:util",
+    ":api:game",
+    ":api:networking",
+)
