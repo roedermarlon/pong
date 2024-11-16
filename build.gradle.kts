@@ -12,11 +12,6 @@ allprojects {
     }
 }
 
-repositories {
-    mavenCentral()
-    maven { url = uri("https://s01.oss.sonatype.org/content/repositories/snapshots/") }
-}
-
 dependencies {
     implementation("dev.httpmarco:osgan-netty:1.0.35-SNAPSHOT")
 

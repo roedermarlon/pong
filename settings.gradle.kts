@@ -9,6 +9,7 @@ plugins {
 rootProject.name = "pong"
 
 include(
+    "common",
     "server",
     "client",
     "all"
