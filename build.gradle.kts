@@ -3,7 +3,7 @@ plugins {
 }
 
 allprojects {
-    group = "de.marlonr"
+    group = "com.github.roedermarlon"
     version = "1.0"
 
     repositories {

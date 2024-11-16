@@ -1,4 +1,4 @@
-import de.marlonr.game.server.GameServer;
+import com.github.roedermarlon.pong.server.GameServer;
 
 public class Server {
 
