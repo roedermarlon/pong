@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":"))
+    implementation(project(":common"))
     implementation(libs.bundles.netty)
 
     compileOnly(libs.lombok)

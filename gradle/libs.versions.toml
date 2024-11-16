@@ -4,6 +4,7 @@ netty = "5.0.0.Alpha5"
 lombok = "1.18.34"
 annontations = "22.0.0"
 alert = "1.0.8"
+shadow = "8.1.1"
 
 [libraries]
 osgan-netty = { group = "dev.httpmarco", name = "osgan-netty", version.ref = "osgan" }
@@ -14,6 +15,9 @@ lombok = { group = "org.projectlombok", name = "lombok", version.ref = "lombok" 
 annotations = { group = "org.jetbrains", name = "annotations", version.ref = "annontations" }
 
 alert = { group = "me.obsilabor", name = "alert", version.ref = "alert" }
+
+[plugins]
+shadow = { id = "com.github.johnrengelman.shadow", version.ref = "shadow" }
 
 [bundles]
 netty = ["osgan-netty", "netty-common", "netty-transport"]
