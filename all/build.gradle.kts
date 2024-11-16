@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("com.github.johnrengelman.shadow") version "8.1.1"
+    alias(libs.plugins.shadow)
 }
 
 dependencies {
@@ -15,7 +15,7 @@ tasks {
     }
     shadowJar {
         manifest {
-            attributes["Main-Class"] = "de.marlonr.game.GameEntrypoint"
+            attributes["Main-Class"] = "com.github.roedermarlon.pong.GameEntrypoint"
         }
         archiveFileName = "pong.jar"
     }
