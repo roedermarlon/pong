@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>build.gradle.kts</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <style type="text/css">
+        .s0 {
+            color: #bcbec4;
+        }
+
+        .s1 {
+            color: #bcbec4;
+        }
+
+        .s2 {
+            color: #6aab73;
+        }
+
+        .s3 {
+            color: #7a7e85;
+        }
+    </style>
+</head>
+<body bgcolor="#1e1f22">
+<table BGCOLOR="#606060" CELLPADDING=5 CELLSPACING=0 COLS=1 WIDTH="100%">
+    <tr>
+        <td>
+            <center>
+                <font color="#000000" face="Arial, Helvetica">
+                    build.gradle.kts</font>
+            </center>
+        </td>
+    </tr>
+</table>
+<pre><span class="s0">plugins </span><span class="s1">{</span>
+    <span class="s0">id</span><span class="s1">(</span><span class="s2">&quot;java&quot;</span><span class="s1">)</span>
+<span class="s1">}</span>
+
+<span class="s0">group </span><span class="s1">= </span><span class="s2">&quot;de.marlonr&quot;</span>
+<span class="s0">version </span><span class="s1">= </span><span class="s2">&quot;1.0-SNAPSHOT&quot;</span>
+
+<span class="s0">repositories </span><span class="s1">{</span>
+    <span class="s0">mavenCentral</span><span class="s1">()</span>
+    <span class="s0">maven </span><span class="s1">{ </span><span class="s0">url </span><span class="s1">= </span><span
+            class="s0">uri</span><span class="s1">(</span><span class="s2">&quot;https://s01.oss.sonatype.org/content/repositories/snapshots/&quot;</span><span
+            class="s1">) }</span>
+<span class="s1">}</span>
+
+<span class="s0">dependencies </span><span class="s1">{</span>
+    <span class="s0">testImplementation</span><span class="s1">(</span><span class="s0">platform</span><span class="s1">(</span><span
+            class="s2">&quot;org.junit:junit-bom:5.10.0&quot;</span><span class="s1">))</span>
+    <span class="s0">testImplementation</span><span class="s1">(</span><span class="s2">&quot;org.junit.jupiter:junit-jupiter&quot;</span><span
+            class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;dev.httpmarco:osgan-netty:1.0.35-SNAPSHOT&quot;</span><span
+            class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;io.netty:netty5-common:5.0.0.Alpha5&quot;</span><span
+            class="s1">)</span>
+    <span class="s0">implementation</span><span class="s1">(</span><span class="s2">&quot;io.netty:netty5-transport:5.0.0.Alpha5&quot;</span><span
+            class="s1">)</span>
+
+    <span class="s0">compileOnly</span><span class="s1">(</span><span class="s2">&quot;org.projectlombok:lombok:1.18.34&quot;</span><span
+            class="s1">)</span>
+    <span class="s0">annotationProcessor</span><span class="s1">(</span><span class="s2">&quot;org.projectlombok:lombok:1.18.34&quot;</span><span
+            class="s1">)</span>
+
+    <span class="s0">testCompileOnly</span><span class="s1">(</span><span class="s2">&quot;org.projectlombok:lombok:1.18.34&quot;</span><span
+            class="s1">)</span>
+    <span class="s0">testAnnotationProcessor</span><span class="s1">(</span><span class="s2">&quot;org.projectlombok:lombok:1.18.34&quot;</span><span
+            class="s1">)</span>
+
+    <span class="s3">// jetbrains annotations</span>
+    <span class="s0">compileOnly</span><span class="s1">(</span><span class="s2">&quot;org.jetbrains:annotations:22.0.0&quot;</span><span
+            class="s1">)</span>
+    <span class="s0">testCompileOnly</span><span class="s1">(</span><span class="s2">&quot;org.jetbrains:annotations:22.0.0&quot;</span><span
+            class="s1">)</span>
+
+    <span class="s0">implementation</span><span class="s1">(</span><span
+            class="s2">&quot;me.obsilabor:alert:1.0.8&quot;</span><span class="s1">)</span>
+    <span class="s0">testImplementation</span><span class="s1">(</span><span class="s2">&quot;me.obsilabor:alert:1.0.8&quot;</span><span
+            class="s1">)</span>
+<span class="s1">}</span>
+
+<span class="s0">tasks</span><span class="s1">.</span><span class="s0">test </span><span class="s1">{</span>
+    <span class="s0">useJUnitPlatform</span><span class="s1">()</span>
+<span class="s1">}</span></pre>
+</body>
+</html>

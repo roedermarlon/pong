@@ -1,0 +1,6 @@
+Bugs:
+- client: paddel of opponent is moving under the screen when in fullscreen (disable windowed reize): done
+- client: end game if connection is lost
+
+Features:
+- server & client: Counter
