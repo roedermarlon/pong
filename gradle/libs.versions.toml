@@ -1,5 +1,5 @@
 [versions]
-osgan = "1.0.35-SNAPSHOT"
+osgan = "1.1.0-SNAPSHOT"
 netty = "5.0.0.Alpha5"
 lombok = "1.18.34"
 annontations = "22.0.0"
