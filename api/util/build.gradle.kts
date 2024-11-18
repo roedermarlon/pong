@@ -14,8 +14,8 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 
     // TODO: add this to libs.versions.toml
-    implementation("com.google.auto.service:auto-service:1.0-rc7")
-    annotationProcessor("com.google.auto.service:auto-service:1.0-rc7")
+    implementation("com.google.auto.service:auto-service:1.1.1")
+    annotationProcessor("com.google.auto.service:auto-service:1.1.1")
 }
 
 tasks.withType<JavaCompile> {
