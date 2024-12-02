@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    implementation("dev.httpmarco:osgan-netty:1.1.0-SNAPSHOT")
+    implementation("dev.httpmarco:osgan-netty:1.1.1-SNAPSHOT")
 
     compileOnly("org.projectlombok:lombok:1.18.36")
     annotationProcessor("org.projectlombok:lombok:1.18.36")
