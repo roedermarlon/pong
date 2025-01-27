@@ -2,7 +2,7 @@
 osgan = "1.1.0-SNAPSHOT"
 netty = "5.0.0.Alpha5"
 lombok = "1.18.36"
-annontations = "26.0.1"
+annontations = "26.0.2"
 alert = "1.0.8"
 shadow = "8.1.1"
 
